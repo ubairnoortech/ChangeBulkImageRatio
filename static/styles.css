@@ -98,13 +98,13 @@ img {
     margin-bottom: 100px;
     padding: 100px;
 }
-.outputImageContainer{
+.outputImageContainer {
     display: flex;
-    align-items: flex-start; /* Align items to the start (top) of the container */
+    align-items: flex-start;
     justify-content: center;
     border: 1px solid blueviolet;
-    margin: 100px auto; /* Center the container horizontally */
+    margin: 100px auto;
     padding: 20px;
     overflow-y: auto;
-    
+    max-height: 400px; /* Adjust the max height as needed */
 }
