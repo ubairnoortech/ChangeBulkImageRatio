@@ -1,110 +1,105 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     background-color: #fff;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 800px; /* Adjusted to 80% of typical viewport width in pixels */
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; /* Adjusted to 2% of typical viewport width in pixels */
     display: flex;
     justify-content: baseline;
     align-items: baseline;
-    max-width: auto;
-    margin: 0 auto;
     height: 4rem;
     border-bottom: 1px solid #2D3250;
     flex-direction: row;
     flex-wrap: nowrap;
     border: 2px solid #fff;
-   
-    
 }
-nav{
-    background-color: #2d3250e0;
+
+nav {
+    background-color: rgba(45, 50, 80, 0.88);
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: auto;
-    margin: 0 auto;
     height: 4rem;
     border-bottom: 1px solid #2D3250;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-li{
+
+li {
     display: inline;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px; /* Adjusted to 1.5% of typical viewport width in pixels */
+    padding: 15px; /* Adjusted to 1.5% of typical viewport width in pixels */
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 a {
-    color:white;
-    text-decoration: none;
+    color: white !important ;
+    text-decoration: none !important;
     font-family: Madimi One;
-  }
+}
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjusted to 2% of typical viewport width in pixels */
 }
 
-h2{
+h2 {
     font-family: "Ojuju", sans-serif;
-    color: #fff;
-}
-form {
-    margin-bottom: 20px;
+    color: #fff !important;
 }
 
-input[type="file"], input[type="number"], button {
-    margin: 10px;
-    padding: 10px;
+form {
+    margin-bottom: 20px; /* Adjusted to 2% of typical viewport width in pixels */
+}
+
+input[type="file"],
+input[type="number"],
+button {
+    margin: 15px; /* Adjusted to 1.5% of typical viewport width in pixels */
+    padding: 15px; /* Adjusted to 1.5% of typical viewport width in pixels */
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
 }
+
 img {
     max-width: 100%;
-  
 }
 
-.headingContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
-    margin-bottom: 100px;
-    padding: 100px;
-}
-.formContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid blue;
-    margin-bottom: 100px;
-    padding: 100px;
-}
+.headingContainer,
+.formContainer,
 .outputImageContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    border: 1px solid blueviolet;
-    margin: 100px auto;
-    padding: 20px;
+    border-radius: 10px; /* Adjusted to 1vw in pixels */
+    margin: 20px auto; /* Adjusted to 2vw in pixels */
+    padding: 20px; /* Adjusted to 1vw in pixels */
+}
+
+.outputImageContainer {
+    
     overflow-y: auto;
-    max-height: 400px; /* Adjust the max height as needed */
+    max-height: 80vh; /* Set to a fixed pixel value */
+}
+
+.downloadContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
