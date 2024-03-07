@@ -1,7 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -10,6 +17,34 @@ body {
     padding: 20px;
     text-align: center;
 }
+nav{
+    background-color: #2d3250e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    margin: 0 auto;
+    height: 4rem;
+    border-bottom: 1px solid #2D3250;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color:white;
+    text-decoration: none;
+    font-family: Madimi One;
+  }
 
 h1 {
     margin-bottom: 20px;
