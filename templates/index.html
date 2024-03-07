@@ -29,36 +29,37 @@
     <div class="headingContainer"> 
         <h1>Image Resizer</h1>
     </div>
-    <div class="container">
+    <div class="containter-fluid container1">
         <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="col-md-12 col-lg-12 col-sm-12">
                 <div class="formContainer">
                     <form action="/" method="post" enctype="multipart/form-data">
-                        <input type="file" name="file" accept="image/*" required>
+                        <input type="file" name="file" accept="image/*" multiple required>
                         <input type="number" name="width" placeholder="New Width" required>
                         <button type="submit">Resize</button>
                     </form>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-<div class="row downloadContainer" >
-    <div class="col-md-6 col-lg-6 col-sm-12">
-        <div class="outputImageContainer">
-            {% if resized_img %}
-                <img src="{{ resized_img }}" alt="Resized Image">
-               
+           
+        </div>
+       
+    </div>
+    <div class="containter-fluid container2">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% if resized_images %}
+                {% for img_path in resized_images %}
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="card text-center">
+                            <img src="{{ img_path }}" alt="Resized Image">
+                            <div class="card-body">
+                                <a href="{{ img_path }}" class="btn btn-primary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
             {% endif %}
         </div>
     </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-     <a href="{{ resized_img }}" download><button>Download Resized Image</button></a>
-                    </div>
-
-</div>
-               
-                
-            </div>
-        </div>
-    </div>
+    
 </body>
 </html>
