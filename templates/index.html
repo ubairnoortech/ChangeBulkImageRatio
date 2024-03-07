@@ -15,9 +15,9 @@
 
         <nav>
 
-            <div id="logo" class="col-md-4 "><h2>UbiTech</h2>
+            <div><h2>Ubi Tech</h2>
             </div>
-            <div class="col-md-8">
+            <div >
                 <ul>
                     <li> <a href=""> Home </a>  </li>
                     <li> <a href="">About</a> </li>
@@ -31,15 +31,29 @@
 
 
     <div class="container">
-        <h1>Image Resizer</h1>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept="image/*" required>
-            <input type="number" name="width" placeholder="New Width" required>
-            <button type="submit">Resize</button>
-        </form>
-        {% if resized_img %}
+      <div >
+        <div class="headingContainer"> 
+            <h1>Image Resizer</h1>
+        </div>
+        <div  class="formContainer">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <input type="number" name="width" placeholder="New Width" required>
+                <button type="submit">Resize</button>
+            </form>
+
+        </div>
+      
+        <div  class="outputImageContainer" >
+            {% if resized_img %}
             <img src="{{ resized_img }}" alt="Resized Image">
         {% endif %}
+        </div>
+
+
+      </div>
+       
+   
     </div>
 </body>
 </html>

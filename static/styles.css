@@ -9,13 +9,25 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    max-width: auto;
+    margin: 0 auto;
+    height: 4rem;
+    border-bottom: 1px solid #2D3250;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 2px solid #fff;
+   
+    
 }
 nav{
     background-color: #2d3250e0;
@@ -50,6 +62,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2{
+    font-family: "Ojuju", sans-serif;
+    color: #fff;
+}
 form {
     margin-bottom: 20px;
 }
@@ -59,11 +75,36 @@ input[type="file"], input[type="number"], button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    cursor: pointer;
 }
-
 img {
     max-width: 100%;
-    margin-top: 20px;
+  
 }
 
-
+.headingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-bottom: 100px;
+    padding: 100px;
+}
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    margin-bottom: 100px;
+    padding: 100px;
+}
+.outputImageContainer{
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the container */
+    justify-content: center;
+    border: 1px solid blueviolet;
+    margin: 100px auto; /* Center the container horizontally */
+    padding: 20px;
+    overflow-y: auto;
+    
+}
